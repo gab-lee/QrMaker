@@ -5,7 +5,6 @@ function generateQRCode() {
     alert("Please enter a link or text.");
     return;
   }
-  
   // Remove previously generated QR code (if any)
   while (qrcodeDiv.firstChild) {
     qrcodeDiv.removeChild(qrcodeDiv.firstChild);
