@@ -8,10 +8,15 @@
   <div class="container">
     <h1>QR Code Generator</h1>
     <input type="text" id="inputLink" placeholder="Enter link or text">
-    <button onclick="generateQRCode()">Generate QR Code</button>
+    <button id="generateQR">Generate QR Code</button>
     <div id="qrcode"></div>
   </div>
 
+    <h2>Number Display</h2>
+    <p id="numberDisplay">0</p>
+    <button id="incrementButton">Increment</button>
+
+  <!-- Include your script.js file -->
   <script src="qrcode.min.js"></script>
   <script src="script.js"></script>
 </body>
