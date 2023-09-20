@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>QR Code Generator</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <h1>QR Code Generator</h1>
-    <input type="text" id="inputLink" placeholder="Enter link or text">
-    <button id="generateQR">Generate QR Code </button> 
-    <p id="numberDisplay">0</p>
-    <div id="qrcode"></div>
-  </div>
-
-    <!-- <h2>Number Display</h2>
-    <p id="numberDisplay">0</p>
-    <button id="incrementButton">Increment</button> -->
-
-  <!-- Include your script.js file -->
-  <script src="qrcode.min.js"></script>
-  <script src="script.js"></script>
-</body>
+  <body>
+      <header>
+          <nav>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <div class="container" id="home">
+              <h1>QR Code Generator</h1>
+              <div class="qr-section">
+                  <div class="input-container">
+                      <h2>Generate QR Code</h2>
+                      <div class="qr-generator">
+                        <input type="text" id="inputLink" placeholder="Enter link or text">
+                        <button class="btn" id="generateQR">Generate QR Code </button> 
+                      </div>
+                  </div>
+                  <div class="qr-image-container">
+                          <div id="qrcode"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="about" id="about">
+              <h2>Roadmap</h2>
+              <p>Sep 23 - Launched simple QR Code generator</p>
+          </div>
+      </main>
+      <script src="qrcode.min.js"></script>
+      <script src="script.js"></script>
+  </body>
 </html>
+
